@@ -1,0 +1,158 @@
+@import url("reset.css");
+
+body {
+    color: white;
+
+}
+
+.page {
+    padding-block: 80px;
+    min-height: 100%;
+    background: url('../img/41568_full-retina.jpg') top / cover no-repeat;
+
+}
+
+[class*="__container"] {
+    max-width: 1000px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+
+
+.title {
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.text {
+    margin-bottom: 50px;
+}
+
+.text--center {
+    text-align: center;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul {}
+
+li {
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+
+li::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    background-color: white;
+}
+
+.tittle--center {
+    text-align: center;
+}
+
+.menu {}
+
+.menu li {
+    display: inline-block;
+    position: relative;
+}
+
+.menu li:hover .link {
+    background-color: black;
+}
+
+.menu li:hover .sub-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.link {
+    background-color: brown;
+    display: inline-block;
+    padding: 3px;
+    transition: all 0.3s;
+}
+
+.sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 3px 3px 3px rgba(0, 0, 0, 0, 53);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+}
+
+.sub-menu li {
+    display: block;
+}
+
+.sub-link {
+    display: block;
+    padding: 3px;
+    background-color: darkgray;
+}
+
+.sub-link:hover {
+    background-color: darkgray;
+}
+
+
+.button {
+    border-radius: 10px;
+    background-color: aquamarine;
+    padding: 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: Arial;
+    text-align: center;
+    box-shadow: 0px 5px 0 px 0 px #000;
+    position: relative;
+    top: 0;
+    transition: all 0, 3s;
+}
+
+.button:hover {
+    top: 3px;
+    background-color: aliceblue;
+    box-shadow: 0 px 2 px 0 px 0 px #000;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.366);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    padding-top: 20;
+    padding-bottom: 20;
+}
+
+
+.page-about {
+    padding-block: 80px;
+    min-height: 100%;
+    background: url('../img/Supermassive_Gsmes_log.jpg') center / cover no-repeat;
+
+}
+
+.page-about__text {
+    font-size: 28px;
+}
+
+.cast {
+    color: red;
+}
